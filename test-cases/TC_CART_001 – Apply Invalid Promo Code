@@ -1,0 +1,29 @@
+Test Case ID: TC_CART_001
+Title: Applying an Invalid Promo Code during Checkout
+
+Test Scenario:
+User tries to apply an invalid promo code after adding a product to the cart.
+
+Preconditions:
+User is on the homepage: https://rahulshettyacademy.com/seleniumPractise/#/
+Browser is open and working
+
+Test Steps:
+1. Search for a product using the keyword ap
+2. Wait for products to appear
+3. Add the first product to the cart
+4. Proceed to checkout
+5.Enter promo code: invalidCode123
+6. Click to apply the promo code
+7. Wait for response message
+
+Expected Result:
+A message should appear indicating that the promo code is invalid.
+
+Postconditions:
+No discount is applied. User remains in checkout.
+
+Status: Pass
+
+Automated Test:
+Implemented in test_cart_functions.py, function: test_invalid_promo_code
